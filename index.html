@@ -54,6 +54,31 @@
             padding: 18px 0;
         }
         /* //Footer styles */
+        
+        /* Animation*/
+        .b{
+          animation: animate 3s;
+          animation-iteration-count: 5;  
+        }
+        @keyframes animate{
+            15%{color: #FF0000;}
+            30%{color: #FFFF00;}
+            50%{color: #00FF00;}
+            70%{color: #FF00FF;}
+            100%{color: #003300;}
+        }
+        .c{
+            animation: animatebg 3s;
+          animation-iteration-count: 5; 
+        }
+
+        @keyframes animatebg{
+            15%{background-color: blueviolet;}
+            30%{background-color: royalblue;}
+            50%{background-color: rosybrown;}
+            70%{background-color: goldenrod;}
+            100%{background-color: yellowgreen;}
+        }
     </style>
 </head>
 
@@ -123,8 +148,8 @@
             <div class="justify-content-center align-items-center text-center text-md-center">
                 <img src="assets/india-gate-all.png" alt="Logo" width="360" height="250" class="d-inline-block">
                 <h1>
-                    <div class="cardbg card border-0 display-3 text-center">
-                        <h3 class="card-title">
+                    <div class="cardbg card border-0 display-3 text-center c">
+                        <h3 class="card-title b">
                             Historical Places in India
                         </h3>
                         <p class="lead card-subtitle">Fascinating history of historical places</p>
